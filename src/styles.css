@@ -49,6 +49,34 @@
 :root {
   --radius: 1.25rem;
 
+  /* ---------- Typography Scale ---------- */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1.0625rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 4.5rem;
+  --font-size-8xl: 6rem;
+
+  /* ---------- Heading Scale (H1-H4) ---------- */
+  --heading-1-size: clamp(2.5rem, 5vw + 1rem, 5.5rem);
+  --heading-2-size: clamp(1.875rem, 3vw + 0.8rem, 3.75rem);
+  --heading-3-size: clamp(1.5rem, 2vw + 0.5rem, 2.25rem);
+  --heading-4-size: clamp(1.25rem, 1.5vw + 0.4rem, 1.75rem);
+
+  --heading-1-weight: 600;
+  --heading-2-weight: 600;
+  --heading-3-weight: 600;
+  --heading-4-weight: 600;
+
+  --heading-line-height: 1.15;
+  --heading-letter-spacing: -0.02em;
+
   --ivory: oklch(0.985 0.008 90);
   --navy: oklch(0.32 0.09 264);
   --navy-deep: oklch(0.24 0.075 264);
@@ -100,20 +128,114 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-size: 1.0625rem;
+    font-size: var(--font-size-base);
     line-height: 1.7;
     overflow-x: hidden;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    line-height: 1.12;
+  /* ---------- Heading Typography ---------- */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display) !important;
+    font-weight: var(--heading-1-weight);
+    letter-spacing: var(--heading-letter-spacing);
+    line-height: var(--heading-line-height);
     color: var(--navy-deep);
+  }
+
+  h1 {
+    font-size: var(--heading-1-size);
+  }
+
+  h2 {
+    font-size: var(--heading-2-size);
+  }
+
+  h3 {
+    font-size: var(--heading-3-size);
+  }
+
+  h4 {
+    font-size: var(--heading-4-size);
+  }
+
+  /* ---------- Body Typography ---------- */
+  p {
+    line-height: 1.7;
+  }
+
+  /* ---------- Label Typography ---------- */
+  .label-eyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+  }
+
+  /* ---------- Form Typography ---------- */
+  form label {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  form input,
+  form textarea {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+  }
+
+  /* ---------- Navigation Typography ---------- */
+  nav a, .nav-link {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- Button Typography ---------- */
+  .btn-base {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-sm {
+    font-size: var(--font-size-sm);
+  }
+
+  .btn-lg {
+    font-size: var(--font-size-lg);
+  }
+
+  /* ---------- Card Typography ---------- */
+  article h3, .card-title {
+    font-family: var(--font-display);
+    font-size: var(--heading-3-size);
+    font-weight: var(--heading-3-weight);
+    line-height: var(--heading-line-height);
+    letter-spacing: var(--heading-letter-spacing);
+  }
+
+  article p, .card-body {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+  }
+
+  /* ---------- Footer Typography ---------- */
+  footer {
+    font-family: var(--font-sans);
+  }
+
+  footer h3 {
+    font-family: var(--font-display);
+    font-size: var(--heading-4-size);
+    font-weight: var(--heading-4-weight);
   }
 
   ::selection {

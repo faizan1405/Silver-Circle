@@ -54,7 +54,7 @@ export function Navbar() {
               key={l.to}
               to={l.to}
               activeOptions={{ exact: l.to === "/" }}
-              className="relative py-1 text-[1.05rem] font-semibold text-navy-deep transition-colors duration-500 hover:text-navy after:absolute after:inset-x-0 after:-bottom-0.5 after:h-[2px] after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-500 hover:after:scale-x-100 data-[status=active]:after:scale-x-100"
+              className="relative py-1 font-semibold text-navy-deep transition-colors duration-500 hover:text-navy after:absolute after:inset-x-0 after:-bottom-0.5 after:h-[2px] after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-500 hover:after:scale-x-100 data-[status=active]:after:scale-x-100"
             >
               {l.label}
             </Link>
@@ -63,7 +63,7 @@ export function Navbar() {
             href={whatsappUrl(DEFAULT_ENQUIRY)}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-base btn-primary !px-7 !py-3"
+            className="btn-base btn-primary !px-7 !py-3.5"
           >
             Enquire Now
           </a>

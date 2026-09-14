@@ -128,7 +128,7 @@ export function ScrollVideoHero() {
             <p data-hero-line="0" className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-silver-light opacity-0 sm:text-base">
               Silver Circle Travel
             </p>
-            <h1 className="font-display text-5xl text-primary-foreground sm:text-7xl lg:text-8xl">
+            <h1 className="text-primary-foreground">
               <span data-hero-line="0.08" className="block opacity-0">Travel Freely.</span>
               <span data-hero-line="0.2" className="mt-2 block text-silver-light opacity-0">We Take Care of the Rest.</span>
             </h1>

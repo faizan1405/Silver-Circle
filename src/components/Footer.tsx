@@ -10,7 +10,7 @@ export function Footer() {
           <div className="hover-glow inline-flex rounded-3xl bg-white/95 p-4">
             <img src={logo.url} alt="Silver Circle Travel" width={200} height={200} loading="lazy" className="h-24 w-auto object-contain" />
           </div>
-          <p className="mt-6 max-w-md font-display text-2xl text-white">{SITE.tagline}</p>
+          <p className="mt-6 max-w-md text-2xl text-white">{SITE.tagline}</p>
           <p className="mt-3 max-w-md text-white/70">
             Curated international journeys designed around the comfort, pace and peace of mind of
             travellers 60+ and their families.
@@ -18,7 +18,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-xl text-white">Explore</h3>
+          <h3 className="text-white">Explore</h3>
           <ul className="mt-4 space-y-3">
             {[
               { to: "/", label: "Home" },
