@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { SITE } from "@/lib/site";
 
 export function Loader() {
@@ -61,7 +61,7 @@ export function Loader() {
       </div>
 
       <img
-        src={logo.url}
+        src={logo}
         alt=""
         width={220}
         height={220}

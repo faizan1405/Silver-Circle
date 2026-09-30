@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { DEFAULT_ENQUIRY, whatsappUrl } from "@/lib/site";
 
 const LINKS = [
@@ -36,7 +36,7 @@ export function Navbar() {
       <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3 lg:px-8">
         <Link to="/" className="group flex min-w-0 items-center" aria-label="Silver Circle Travel — home">
           <img
-            src={logo.url}
+            src={logo}
             alt="Silver Circle Travel"
             width={200}
             height={200}

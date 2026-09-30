@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/logo.png.asset.json";
+import logo from "@/assets/logo.png";
 import { SITE, whatsappUrl, DEFAULT_ENQUIRY } from "@/lib/site";
 
 export function Footer() {
@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="hover-glow inline-flex rounded-3xl bg-white/95 p-4">
-            <img src={logo.url} alt="Silver Circle Travel" width={200} height={200} loading="lazy" className="h-24 w-auto object-contain" />
+            <img src={logo} alt="Silver Circle Travel" width={200} height={200} loading="lazy" className="h-24 w-auto object-contain" />
           </div>
           <p className="mt-6 max-w-md text-2xl text-white">{SITE.tagline}</p>
           <p className="mt-3 max-w-md text-white/70">
