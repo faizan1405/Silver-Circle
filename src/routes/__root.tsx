@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Silver Circle Travel" },
-      { name: "description", content: "Thoughtfully curated international journeys for travellers 60+." },
+      { name: "description", content: "Thoughtfully curated international journeys for Silver Travellers." },
       { name: "author", content: "Silver Circle Travel" },
       { property: "og:title", content: "Silver Circle Travel" },
       { property: "og:description", content: "Travel Freely. We Take Care of the Rest." },

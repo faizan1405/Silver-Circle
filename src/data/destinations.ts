@@ -31,7 +31,7 @@ const baseInclusions = [
   "Guided sightseeing",
   "Tour manager throughout",
   "24x7 emergency support",
-  "Senior-friendly pacing",
+  "Unhurried pacing for Silver Travellers",
 ];
 
 export const DESTINATIONS: Destination[] = [
@@ -105,7 +105,7 @@ export const DESTINATIONS: Destination[] = [
     priceFrom: 300000,
     priceTo: 380000,
     blurb:
-      "Cherry blossoms, calm gardens and immaculate bullet trains — the most senior-friendly country in Asia.",
+      "Cherry blossoms, calm gardens and immaculate bullet trains — exceptionally welcoming and comfortable for Silver Travellers.",
     highlights: ["Shinkansen reserved seats", "Mt. Fuji & Hakone", "Kyoto temple gardens", "Vegetarian meals arranged"],
     inclusions: [...baseInclusions, "Visa assistance"],
     bestTime: "March – May, October – November",

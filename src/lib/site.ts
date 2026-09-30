@@ -14,7 +14,7 @@ export function whatsappUrl(message: string) {
 }
 
 export const DEFAULT_ENQUIRY =
-  "Hello Silver Circle Travel, I would like to know more about your curated journeys for travellers 60+.";
+  "Hello Silver Circle Travel, I would like to know more about your curated journeys for Silver Travellers.";
 
 export function openWhatsApp(message: string = DEFAULT_ENQUIRY) {
   if (typeof window !== "undefined") {

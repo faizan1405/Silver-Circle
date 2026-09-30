@@ -10,10 +10,10 @@ export function Footer() {
           <div className="hover-glow inline-flex rounded-3xl bg-white/95 p-4">
             <img src={logo} alt="Silver Circle Travel" width={200} height={200} loading="lazy" className="h-24 w-auto object-contain" />
           </div>
-          <p className="mt-6 max-w-md text-2xl text-white">{SITE.tagline}</p>
-          <p className="mt-3 max-w-md text-white/70">
+          <p className="mt-6 max-w-md font-display text-2xl text-white">{SITE.tagline}</p>
+          <p className="mt-3 max-w-md leading-relaxed text-white/70">
             Curated international journeys designed around the comfort, pace and peace of mind of
-            travellers 60+ and their families.
+            Silver Travellers and their families.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-xl text-white">Reach Us</h3>
+          <h3 className="text-white">Reach Us</h3>
           <ul className="mt-4 space-y-3 text-white/75">
             <li>
               <a href={`tel:${SITE.phone}`} className="inline-block transition-all duration-500 hover:translate-x-1 hover:text-gold">
@@ -58,7 +58,7 @@ export function Footer() {
                 WhatsApp us
               </a>
             </li>
-            <li className="pt-2 leading-relaxed">{SITE.address}</li>
+            <li className="pt-2 leading-relaxed text-sm text-white/65">{SITE.address}</li>
           </ul>
         </div>
       </div>

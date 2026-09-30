@@ -64,18 +64,22 @@
   --font-size-8xl: 6rem;
 
   /* ---------- Heading Scale (H1-H4) ---------- */
-  --heading-1-size: clamp(2.5rem, 5vw + 1rem, 5.5rem);
-  --heading-2-size: clamp(1.875rem, 3vw + 0.8rem, 3.75rem);
-  --heading-3-size: clamp(1.5rem, 2vw + 0.5rem, 2.25rem);
-  --heading-4-size: clamp(1.25rem, 1.5vw + 0.4rem, 1.75rem);
+  --heading-1-size: clamp(2.35rem, 4.8vw + 0.8rem, 5.25rem);
+  --heading-2-size: clamp(1.85rem, 3vw + 0.5rem, 3.25rem);
+  --heading-3-size: clamp(1.35rem, 1.8vw + 0.4rem, 1.875rem);
+  --heading-4-size: clamp(1.15rem, 1.2vw + 0.3rem, 1.45rem);
 
   --heading-1-weight: 600;
   --heading-2-weight: 600;
   --heading-3-weight: 600;
   --heading-4-weight: 600;
 
-  --heading-line-height: 1.15;
-  --heading-letter-spacing: -0.02em;
+  --heading-1-line-height: 1.2;
+  --heading-2-line-height: 1.24;
+  --heading-3-line-height: 1.28;
+  --heading-4-line-height: 1.32;
+  --heading-line-height: 1.24;
+  --heading-letter-spacing: -0.015em;
 
   --ivory: oklch(0.985 0.008 90);
   --navy: oklch(0.32 0.09 264);
@@ -135,27 +139,32 @@
 
   /* ---------- Heading Typography ---------- */
   h1, h2, h3, h4 {
-    font-family: var(--font-display) !important;
+    font-family: var(--font-display);
     font-weight: var(--heading-1-weight);
     letter-spacing: var(--heading-letter-spacing);
     line-height: var(--heading-line-height);
     color: var(--navy-deep);
+    text-wrap: balance;
   }
 
   h1 {
     font-size: var(--heading-1-size);
+    line-height: var(--heading-1-line-height);
   }
 
   h2 {
     font-size: var(--heading-2-size);
+    line-height: var(--heading-2-line-height);
   }
 
   h3 {
     font-size: var(--heading-3-size);
+    line-height: var(--heading-3-line-height);
   }
 
   h4 {
     font-size: var(--heading-4-size);
+    line-height: var(--heading-4-line-height);
   }
 
   /* ---------- Body Typography ---------- */
@@ -166,26 +175,33 @@
   /* ---------- Label Typography ---------- */
   .label-eyebrow {
     font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.28em;
+    letter-spacing: 0.26em;
+  }
+
+  @media (min-width: 640px) {
+    .label-eyebrow {
+      font-size: var(--font-size-sm);
+    }
   }
 
   /* ---------- Form Typography ---------- */
   form label {
     font-family: var(--font-sans);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: 600;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
   }
 
   form input,
+  form select,
   form textarea {
     font-family: var(--font-sans);
     font-size: var(--font-size-base);
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   /* ---------- Navigation Typography ---------- */
@@ -202,6 +218,7 @@
     font-size: var(--font-size-base);
     font-weight: 600;
     letter-spacing: 0.02em;
+    line-height: 1.4;
   }
 
   .btn-sm {
@@ -217,7 +234,7 @@
     font-family: var(--font-display);
     font-size: var(--heading-3-size);
     font-weight: var(--heading-3-weight);
-    line-height: var(--heading-line-height);
+    line-height: var(--heading-3-line-height);
     letter-spacing: var(--heading-letter-spacing);
   }
 
@@ -236,6 +253,8 @@
     font-family: var(--font-display);
     font-size: var(--heading-4-size);
     font-weight: var(--heading-4-weight);
+    line-height: var(--heading-4-line-height);
+    letter-spacing: var(--heading-letter-spacing);
   }
 
   ::selection {
@@ -357,7 +376,9 @@
   opacity: 1;
   transform: none;
   filter: none;
-  clip-path: inset(0 0 0 0 round 1.25rem);
+}
+.reveal[data-variant="clip"].is-visible {
+  clip-path: inset(-8% -4% -12% -4% round 1.25rem);
 }
 .reveal[data-variant="circle"].is-visible {
   clip-path: circle(140% at 50% 60%);

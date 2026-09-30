@@ -197,15 +197,15 @@ export function ScrollVideoHero() {
 
         <div className="pointer-events-auto relative mx-auto flex h-full max-w-7xl items-center px-5 pb-20 pt-28 lg:px-8 lg:pb-24 lg:pt-36">
           <div ref={copyRef} className="w-full max-w-3xl text-left will-change-[opacity]">
-            <p data-hero-line="0" className="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-silver-light opacity-0 sm:mb-5 sm:text-base">
+            <p data-hero-line="0" className="label-eyebrow mb-4 text-silver-light opacity-0 sm:mb-5">
               Silver Circle Travel
             </p>
-            <h1 className="text-primary-foreground">
-              <span data-hero-line="0.08" className="block opacity-0">Travel Freely.</span>
-              <span data-hero-line="0.2" className="mt-2 block text-silver-light opacity-0">We Take Care of the Rest.</span>
+            <h1 className="text-primary-foreground pb-1">
+              <span data-hero-line="0.08" className="block pb-1 opacity-0">Travel Freely.</span>
+              <span data-hero-line="0.2" className="mt-2 block pb-1 text-silver-light opacity-0">We Take Care of the Rest.</span>
             </h1>
             <p data-hero-line="0.34" className="mt-5 max-w-xl text-base text-primary-foreground/85 opacity-0 sm:mt-7 sm:text-2xl">
-              Curated international journeys for travellers 60+
+              Curated international journeys for Silver Travellers
             </p>
             <div data-hero-line="0.48" className="mt-7 flex flex-col items-start gap-3 opacity-0 sm:mt-9 sm:flex-row sm:gap-4">
               <Magnetic><a href="#travel-search" className="btn-base btn-silver">Plan My Journey</a></Magnetic>
