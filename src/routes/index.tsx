@@ -9,7 +9,7 @@ import { FourFeaturedDestinations, PackageCard } from "@/components/TravelCards"
 import { Reveal } from "@/components/Reveal";
 import { Magnetic } from "@/components/Magnetic";
 import { DESTINATIONS } from "@/data/destinations";
-import slowTravel from "@/assets/slow-travel.jpg";
+import slowTravel from "@/assets/slow-travel.webp";
 import { DEFAULT_ENQUIRY, whatsappUrl } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
